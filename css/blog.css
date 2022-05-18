@@ -1,0 +1,27 @@
+#blog h3, h4{
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
+#blog .contenedor{
+    display: flex; /*imagenes en una sola linea*/
+    justify-content: center;
+    flex-wrap:wrap; /*los elemntos que no caben se bajen*/
+}
+#blog article{
+    margin:15px;
+}
+#blog img{
+    width:100% ;
+    max-width:400px ;
+}
+@media (min-width:720px) {
+    #blog h3{
+        font-size: 28px;
+    }
+}
+@media (min-width:1024px) {
+    #blog img{
+        max-width: 330px;
+    }
+}

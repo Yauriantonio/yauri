@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+@import url(banner.css);
+@import url(menu.css);
+@import url(blog.css);
+@import url(info.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Todo se contenga en un modelo de caja*/
+}
+/*formato de la letra*/
+body{
+    font-family: 'Stylish', sans-serif;
+    background: url(../imagenes/shop-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  
+    
+} /*encabezado de menu #333*/
+header{
+    width: 100%;
+    height: 35px;
+    background: rgba(51,51,51,0.9);
+    color: #fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;/*por encima de los demas elementos*/
+} /*espacio del menu*/
+.contenido{
+    width: 100%;
+    margin: auto;
+    
+}/*icono menu a la izquierda*/
+
+    h1 {
+    float: left;
+    }
+header .contenido {
+    display: table;
+}
+section{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#bienvenidos{
+    background: rgba(51,51,51,0.9);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#bienvenidos h2{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+}
+#bienvenidos h3{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 22px;
+    padding: 10px;
+    color: #fff;
+    text-decoration-color: blue;
+}
+#bienvenidos p{
+    display: block;
+    text-align: justify;
+    margin-top: 18px;
+    font-size: 16px;
+    padding: 20px 30px;
+    color:#fff;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;/*centrado*/
+    padding-bottom: 100px; /*espaciado*/ 
+    justify-content: space-around;
+}
+
+.copy{
+    font-size: 18px;
+    text-align: center;
+}
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+    display:block;
+    
+}
+.sociales a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.sociales a:hover{
+    font-size: 31px;
+}
+.ultimo{
+    color: #fff;
+    background: rgba(51,51,51,0.9);
+    padding: 20px;
+}
+
+@media (min-width:768px){
+    .sociales{
+        font-size: 40px;
+        padding: auto;
+    }
+    .sociales a:hover{
+        font-size: 41px;
+    }
+}
+@media (min-width:720px){
+    #bienvenidos h2{
+        font-size: 28px;
+    }
+}
+@media (min-width:720px){
+    #bienvenidos h3{
+        font-size: 40px;
+    }
+}
+@media (min-width:720px){
+    #bienvenidos {
+        margin-top: 80px;
+    }
+}
+@media (min-width:454px){
+    header{
+        height: 45px;
+    
+    }
+}
+@media (min-width:1024px){
+    #bienvenidos p{
+        margin:20px 100px;
+    
+    }
+} 
+/*todos los contenedores se alinean
+@media (min-width:1024px){
+    .contenedor{
+          width:1000px;
+          
+    }
+    
+} */
